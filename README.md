@@ -1,17 +1,17 @@
 # 🧮 Calculadora Simples em C
 
-Projeto desenvolvido com o objetivo de treinar **lógica de programação** e aplicar boas **práticas de código limpo** (clean code) e **refatoração** em C, evoluindo continuamente a organização e a robustez do código além das quatro operações básicas.
+Projeto desenvolvido com o objetivo de treinar **lógica de programação** e aplicar boas **práticas de código limpo** (clean code) e **refatoração** em C, evoluindo a organização do código além das quatro operações básicas.
 
 ## 🎯 Objetivo do Projeto
 
-Mais do que apenas realizar cálculos, este projeto foi criado para praticar:
+Este projeto foi criado para praticar:
 
 - Separação de responsabilidades em funções pequenas e coesas (Single Responsibility Principle)
 - Refatoração incremental, extraindo lógica da `main()` para funções especializadas
 - Nomenclatura clara e autoexplicativa de variáveis e funções
 - Validação de entradas do usuário, incluindo casos de erro matemático
 - Estruturação de um fluxo de programa legível e fácil de manter
-- Desenvolver lógica com uso restrito de Inteligência Artificial, a qual foi utilizada apenas para aprender práticas de Clean Code
+- Lógica de progamação com uso restrito de Inteligência Artificial, a qual foi utilizada apenas para aprender práticas de Clean Code e para auxiliar na escrita do README
 
 ## 🛠️ Conceitos praticados
 
@@ -41,11 +41,11 @@ deixando cada função responsável por uma única tarefa.
 | `somar()`, `subtrair()`, `multiplicar()`, `dividir()` | Executam e exibem o resultado de cada operação |
 | `repetirCalculadora()` | Pergunta e valida se o usuário deseja continuar |
 
-Essa divisão reflete um processo contínuo de refatoração**: a lógica que antes
+Essa divisão reflete um processo contínuo de refatoração. A lógica que antes
 estava concentrada na `main()` foi progressivamente extraída em funções menores,
 nomeadas de acordo com sua responsabilidade, e a validação de divisão por zero foi
 isolada dentro de `executarOperacoes()`, mantendo `dividir()` livre de
-responsabilidades de tratamento de erro.
+responsabilidades de tratamento de erro. Além disso, a validação de entrada não numérica em `scanf` na função `escanearNumeros()` foi tratada, a fim de impedir comportamentos inesperados do código.
 
 ## 💻 Exemplo de Uso
 
